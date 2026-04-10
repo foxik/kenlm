@@ -1,3 +1,7 @@
+# This is a fork providing ufal.kenlm PyPI package working with modern Pythons.
+
+The original README.md continues for now on.
+
 # kenlm
 
 Language model inference code by Kenneth Heafield (kenlm at kheafield.com)
