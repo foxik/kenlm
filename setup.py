@@ -45,17 +45,17 @@ if platform.system() == 'Darwin':
     ARGS += ["-stdlib=libc++", "-mmacosx-version-min=10.7"]
     INCLUDE_PATHS.append("/usr/local/include")
 
-if compile_test('zlib.h', 'z'):
-    ARGS.append('-DHAVE_ZLIB')
-    LIBS.append('z')
-
-if compile_test('bzlib.h', 'bz2'):
-    ARGS.append('-DHAVE_BZLIB')
-    LIBS.append('bz2')
-
-if compile_test('lzma.h', 'lzma'):
-    ARGS.append('-DHAVE_XZLIB')
-    LIBS.append('lzma')
+# if compile_test('zlib.h', 'z'):
+#     ARGS.append('-DHAVE_ZLIB')
+#     LIBS.append('z')
+# 
+# if compile_test('bzlib.h', 'bz2'):
+#     ARGS.append('-DHAVE_BZLIB')
+#     LIBS.append('bz2')
+# 
+# if compile_test('lzma.h', 'lzma'):
+#     ARGS.append('-DHAVE_XZLIB')
+#     LIBS.append('lzma')
 
 
 class build_ext(_build_ext):
