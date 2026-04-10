@@ -123,7 +123,7 @@ ext_modules = [
 
 setup(
     name='ufal.kenlm',
-    version='26.04.1',
+    version='26.4.1',
     ext_modules=ext_modules,
     cmdclass={"build_ext": build_ext},
     include_package_data=True,
