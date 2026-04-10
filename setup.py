@@ -127,4 +127,7 @@ setup(
     ext_modules=ext_modules,
     cmdclass={"build_ext": build_ext},
     include_package_data=True,
+    author           = "Milan Straka",
+    author_email     = "straka@ufal.mff.cuni.cz",
+    description      = "Custom-build wheels of kenlm from https://github.com/kpu/kenlm",
 )
